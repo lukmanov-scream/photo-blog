@@ -656,3 +656,64 @@ body {
   bottom: 0;
   text-align: right;
 }
+
+.add-post {
+  padding: 1.5rem 2rem;
+  background-color: #1a2024;
+  margin-bottom: 3rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+}
+
+.add-post__form {
+  display: flex;
+  align-items: center;
+}
+
+.add-post_textarea {
+  font-size: 1.5rem;
+  width: 75%;
+  height: 25px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: inherit;
+  resize: none;
+}
+.add-post_textarea::placeholder {
+  color: #d2d2d2;
+}
+
+.add-post__file,
+.add-post__send {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.add-post__file {
+  background: url("https://placehold.it/50") center no-repeat;
+}
+.add-post__file input {
+  display: none;
+}
+.add-post__file::hover {
+  background-color: #dedede;
+}
+
+.add-post__send {
+  margin-left: 1.5rem;
+  background-color: #0f5ea7;
+}
+.add-post__send::hover {
+  background-color: #0d5190;
+}
+
+.add-post_form-actions {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}

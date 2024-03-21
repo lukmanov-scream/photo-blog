@@ -2,28 +2,50 @@
 layout: default
 title: Photo-Blog | Home
 ---
+
 <div class="stories">
-    <div class="stories__item">
-        <img class="stories__photo" src="assets/images/stories_1.jpg" alt="">
-        <div class="stories__title">Return of the birds</div>
-        <time class="stories__date">18.05.2020</time>
-    </div>
+	<div class="stories__item">
+		<img class="stories__photo" src="assets/images/stories_1.jpg" alt="" />
+		<div class="stories__title">Return of the birds</div>
+		<time class="stories__date">18.05.2020</time>
+	</div>
 
-    <div class="stories__item">
-        <img class="stories__photo" src="assets/images/stories_2.jpg" alt="">
-        <div class="stories__title">Morning</div>
-        <time class="stories__date">05.07.2020</time>
-    </div>
+	<div class="stories__item">
+		<img class="stories__photo" src="assets/images/stories_2.jpg" alt="" />
+		<div class="stories__title">Morning</div>
+		<time class="stories__date">05.07.2020</time>
+	</div>
 
-    <div class="stories__item">
-        <img class="stories__photo" src="assets/images/stories_3.jpg" alt="">
-        <div class="stories__title">Walk in the woods</div>
-        <time class="stories__date">14.06.2021</time>
-    </div>
+	<div class="stories__item">
+		<img class="stories__photo" src="assets/images/stories_3.jpg" alt="" />
+		<div class="stories__title">Walk in the woods</div>
+		<time class="stories__date">14.06.2021</time>
+	</div>
 
-    <div class="stories__item">
-        <img class="stories__photo" src="assets/images/stories_4.jpg" alt="">
-        <div class="stories__title">Mountains</div>
-        <time class="stories__date">11.06.2022</time>
-    </div>
+	<div class="stories__item">
+		<img class="stories__photo" src="assets/images/stories_4.jpg" alt="" />
+		<div class="stories__title">Mountains</div>
+		<time class="stories__date">11.06.2022</time>
+	</div>
+</div>
+<!-- /.stories -->
+
+<!-- Add post -->
+<div class="add-post">
+	<form class="add-post__form" action="/" method="post">
+		<textarea
+			class="add-post_textarea"
+			name="post-text"
+			placeholder="Напишите что-нибудь"
+		></textarea>
+
+		<div class="add-post_form-actions">
+			<label class="add-post__file" for="add-post-file">
+				<input type="file" id="add-post-file" />
+			</label>
+			<button class="add-post__send" type="submit">
+                <img src="assets/images/send.svg" alt="Send">
+            </button>
+		</div>
+	</form>
 </div>
